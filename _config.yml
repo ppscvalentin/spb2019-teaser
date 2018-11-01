@@ -20,8 +20,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stagiipebune.ro" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-source: ./_source/
-destination: ./_build/
 markdown: kramdown
 
 # Exclude from processing.
