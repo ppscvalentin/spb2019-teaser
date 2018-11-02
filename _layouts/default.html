@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Stagii pe Bune 2019. Din Februarie.</title>
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-  {% include header.html %}
+  {% if page.lang == "ro" %}
+    {% include header.html %}
+  {% else %}
+    {% include header-en.html %}
+  {% endif %}
   
   {{ content }}
 
-  {% include contact.html %}
+  {% if page.lang == "ro" %}
+    {% include contact.html %}
+  {% else %}
+    {% include contact-en.html %}
+  {% endif %}
 
-  {% include footer.html %}
+  {% if page.lang == "ro" %}
+    {% include footer.html %}
+  {% else %}
+    {% include footer-en.html %}
+  {% endif %}
 
 </body>
 </html>

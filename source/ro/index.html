@@ -1,87 +1,141 @@
 ---
 layout: default
+lang: ro
 permalink: /
+translate: /en/
 ---
 
 <section class="section section-intro">
   <div class="container">
+    <div class="inner">
+      <h2 class="heading sr-only">Ce înseamnă Stagii pe Bune?</h2>
 
-    <h2 class="sr-only">Ce înseamnă Stagii pe Bune?</h2>
-    <p>4 luni de promovare a ofertelor de stagii și a companiilor</p>
-    <p>1 eveniment în fiecare centru universitar</p>
-    <p>prezentări, Q&A și cele mai impresionante numere:</p>
+      <p class="sellingPoint">4 luni de promovare a ofertelor de stagii și a companiilor</p>
+      <p class="sellingPoint indent">1 eveniment în fiecare centru universitar</p>
 
-    <dl>
-      <dt>Studenți</dt>
-      <dd>2400</dd>
-      <dt>Companii</dt>
-      <dd>97</dd>
-      <dt>Orașe</dt>
-      <dd>9</dd>
-    </dl>
-    
+      <div class="media media-picture">
+        <img src="/assets/prezentarea-fotonation-la-spb2018.jpg" alt="Prezentare FotoNation la SPB2018">
+        <div class="caption">
+          <p>peste 600 de participanți la evenimentul din București</p>
+        </div>
+      </div>    
+
+      <p class="sellingPoint">prezentări, Q&A și cele mai impresionante numere:</p>
+     
+      <dl class="intro-stats">
+        <dt>Studenți</dt>
+        <dd>2400</dd>
+        <dt>Companii</dt>
+        <dd>97</dd>
+        <dt>Orașe</dt>
+        <dd>9</dd>
+      </dl>
+    </div>
   </div>
 </section>
 
 <section class="section section-companies">
+  <!-- <div class="container"> -->
+
+    <h2 class="heading sr-only">Companii participante</h2>
+
+    <!-- {% include companies.html %} -->
+
+  <!-- </div> -->
+</section>
+
+<section class="section section-newIn2019">
   <div class="container">
 
-    <h2 class="sr-only">Companii participante</h2>
-
-    lista de companii
+    <div class="flex flex-middle">
+      <div class="column hidden-p hidden-tp">
+        <div class="media media-picture">
+          <img src="/assets/studenti-la-prezentare.jpg" alt="Studenți la prezentare">
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="heading">Ce aducem nou în 2019</h2>
+        <ul class="list-bullet">
+          <li>un track separat de prezentare pentru internship-uri în afară</li>
+          <li>dublăm capacitatea locației pentru evenimentul din București</li>
+          <li>îmbunătățiri platformei online</li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </section>
 
-<section class="section section-newfeatures">
-  <div class="container">
-    <h2>Ce avem nou în 2019</h2>
-    <ul>
-      <li>un track separat de prezentare pentru internship-uri în afară</li>
-      <li>dublăm capacitatea locației pentru evenimentul din București</li>
-      <li>îmbunătățiri platformei online</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section-forcompanies">
+<section class="section section-forCompanies">
   <div class="container">
 
-    <h2>Pentru companii</h2>
-    <p>De la Bitdefender care are 900 de angajați în România la Eau de Web care are 30, află care sunt <a href="">oportunitățile de parteneriat</a></p>
-    <nav>
-      <ul>
-        <li><a href="">Ce spun companiile</a></li>
-        <li><a href="">Ce spun stagiarii</a></li>
-        <li><a href="">Ce promovează Stagii pe Bune</a></li>
-      </ul>
-    </nav>
+    <div class="flex flex-middle">
+      <div class="column">
+        <h2 class="h-uppercase">Pentru companii</h2>
+        <p class="large">De la Bitdefender care are 900 de angajați în România la Eau de Web care are 30, află care sunt <a href="/parteneriat/">oportunitățile de parteneriat</a></p>
+        <nav class="toc-forcompanies">
+          <ul>
+            <li><a href="/parteneriat/#ce-spun-companiile">Ce spun companiile</a></li>
+            <li><a href="/parteneriat/#ce-spun-stagiarii">Ce spun stagiarii</a></li>
+            <li><a href="/parteneriat/#ce-promovam">Ce promovează Stagii pe Bune</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="column hidden-p hidden-tp">
+        <div class="media media-picture">
+          <img src="/assets/standul-microsoft-la-spb2018.jpg" alt="Standul Microsoft la SPB2018">
+        </div>
+      </div>
+    </div>
     
   </div>
 </section>
 
-<section class="section section-lastyear">
+<section class="section section-lastYear">
   <div class="container">
+    <div class="inner">
+      <div class="overlay">
+        <h2 class="h-uppercase" style="margin-bottom: 0">Cum a fost în 2018</h2>
 
-    <h2>Cum a fost anul trecut</h2>
+        <a href="https://facebook.com/hashtag/prindevalul" target="_blank">
+          <span class="sr">#prindevalul</span>
+          {% include prindevalul.svg %}
+        </a>
 
-    Video embed
-
-    <a href="https://facebook.com/hashtag/prindevalul" target="_blank">#prindevalul</a>
-    
+        <p>Într-un cuvânt: Mișto!</p>
+      </div>
+      <div class="background">
+        <video width="320" height="240" autoplay loop>
+          <source src="/assets/spb2018_highlights540p-optimized.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>    
   </div>
 </section>
+
 
 <section class="section section-testimonial">
   <div class="container">
 
-    <blockquote>
-      <p>Dacă în urmă cu câțiva ani nu găseam candidați pe măsura cerințelor noastre, am ajuns în extrema cealaltă: nu avem suficientă bandă pentru a continua colaborarea cu atâția.</p>
+    <div class="flex flex-middle">
+      <div class="column">
+        <h2 class="heading sr-only">Ce spun companiile</h2>
+        <blockquote class="testimonial">
+          <div class="testimonial-body">
+            <p>Dacă în urmă cu câțiva ani nu găseam candidați pe măsura cerințelor noastre, am ajuns în extrema cealaltă: nu avem suficientă bandă pentru a continua colaborarea cu atâția.</p>
+          </div>
+          <footer>
+            Cosmin Stan <br> Director de Product Management <wbr> la Xperi Corporation
+          </footer>
+        </blockquote>
+      </div>
+      <div class="column hidden-p hidden-tp">
+        <div class="media">
+          <img src="/assets/31-la-suta-din-candidati-fete.jpg" alt="31% din candidați sunt fete.">
+        </div>
+      </div>
+    </div>
 
-      <footer>
-        Cosmin Stan <br> Director de Product Management <wbr> la Xperi Corporation
-      </footer>
-    </blockquote>
-    
   </div>
 </section>
+
