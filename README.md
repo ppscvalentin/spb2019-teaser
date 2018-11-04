@@ -7,7 +7,7 @@ Built with Jekyll.
 ## Development
 
 ```
-bundle exec jekyll serve --config.local.yml
+bundle exec jekyll serve --config _config.local.yml
 ```
 
 
