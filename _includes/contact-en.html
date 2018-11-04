@@ -1,22 +1,35 @@
 <div class="container">
-  <div class="flex">
+  <div class="flex-tp">
     <section class="section section-download">
-      <div>
-        <h2 class="heading">Download presentation</h2>
-        <small class="hidden visible-p">PDF 1,4 MB</small>
-        <a class="sr" href="assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf">Presentation</a>
+      <div class="inner">
+        <h2 class="h no-top">Download presentation</h2>
+        <small class="details" aria-hidden="true">PDF <span class="hidden visible-p">1.4 MB</span></small>
+        <a href="/assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf" class="cursor-download" target="_blank" data-ga="/download">
+          <span class="sr">PDF Presentation, 1.4MB, 20 pages</span>
+        </a>
       </div>
     </section>
 
-    <section class="section section-contact snap-p" id="contact">
-      <div>
-        <h2 class="heading h-uppercase">Contact</h2>
-        <p>
-          Vlad Posea, <br>
-          Program manager
-        </p>
-        <a href="tel:+40752190062">+40 (752) 190 062</a> <br>
-        <a href="mailto:vlad.posea@stagiipebune.ro">vlad.posea@stagiipebune.ro</a>
+    <section 
+      class="section section-contact cursor-call" 
+      id="contact"
+      onclick="window.open('tel:+40752190062')" tabindex="0"
+    >
+      <h2 class="heading h-uppercase">Contact</h2>
+      <p class="no-top">
+        Vlad Posea, <br>
+        Program manager
+      </p>
+      
+      <div class="contact-links">
+        <a href="tel:+40752190062" class="cursor-call" data-ga="/call">
+          <span class="sr">Call</span>
+          +40 (752) 190 062
+        </a> <br>
+        <a class="cursor-email" href="mailto:vlad.posea@stagiipebune.ro" data-ga="/email">
+          <span class="sr">Email</span>
+          vlad.posea@stagiipebune.ro
+        </a>
       </div>
     </section>
   </div>

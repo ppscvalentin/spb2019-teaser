@@ -1,0 +1,45 @@
+<script>
+  (function() {
+
+    var target = document.querySelector('#navmenu-p');
+    var isOpen = false;
+    var body = document.body
+
+    target.addEventListener('transitionend', function() {
+      console.log('transitionend');
+      target.classList.remove('animating');
+    }, false);
+
+
+    function prepareAnimation() {
+      isOpen = !isOpen;
+      body.classList.toggle('navmenu-open');
+
+      target.classList.add('animating');
+      target.offsetHeight;
+    }
+
+    function open() {
+      prepareAnimation();
+      target.classList.add('is-open');      
+    }
+    function close() {
+      prepareAnimation();
+      target.classList.remove('is-open');      
+    }
+    function toggle() {
+      prepareAnimation();
+      target.classList.toggle('is-open');      
+    }
+
+
+    window.toggleNavmenu = toggle;
+
+    window.addEventListener('scroll', function(e) {
+      if (isOpen) {
+        close();
+      }
+    }, false);
+
+  }())
+</script>

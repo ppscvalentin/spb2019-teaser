@@ -5,12 +5,14 @@ dist/
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
 
+
 ### Jekyll ###
 _site/
 _build/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+_config.yml
 
 ### Sass ###
 *.css.map

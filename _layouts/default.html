@@ -16,20 +16,28 @@
   {% else %}
     {% include header-en.html %}
   {% endif %}
-  
-  {{ content }}
 
-  {% if page.lang == "ro" %}
-    {% include contact.html %}
-  {% else %}
-    {% include contact-en.html %}
-  {% endif %}
+  {% include navmenu-script.html %}
+
+  
+
+  <main>
+    {{ content }}
+
+    {% if page.lang == "ro" %}
+      {% include contact.html %}
+    {% else %}
+      {% include contact-en.html %}
+    {% endif %}
+  </main>
 
   {% if page.lang == "ro" %}
     {% include footer.html %}
   {% else %}
     {% include footer-en.html %}
   {% endif %}
+
+  {% include google-analytics.html %}
 
 </body>
 </html>

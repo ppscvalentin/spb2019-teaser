@@ -1,95 +1,101 @@
-<div class="language-picker">
-  <a href="{{ page.translate }}">Română</a>
-</div>
-
-<button class="navmenu-trigger" type="button" onclick="toggleNavmenu()">
-  <div class="default">
-    <img src="/assets/icon-menu.svg">
-    <span class="sr">Open menu</span>
-  </div>
-  <div class="close" hidden>
-    <img src="/assets/icon-close.svg">
-    <span class="sr">Close menu</span>
-  </div>
-</button>
-
-
 <header class="header">
   <div class="container">
+    <div class="inner">
 
-    <div class="header-title">
-      <h1 class="title"><a href="/en/">Stagii pe Bune</a></h1>
-      <!-- or home to en -->
-      <p class="subtitle">14<sup>th</sup> edition. February 2019</p>
-    </div>
-
-    <nav style="display: none">
-      <a href="/">Home page</a>
-
+      <!-- title -->
+      <div class="header-title">
+        <h1 class="title"><a href="/en/">Stagii pe Bune</a></h1>
+        <!-- or home to en -->
+        <p class="subtitle">14th edition. February 2019</p>
+      </div>
 
       
-      <!-- or to RO -->
+      <div class="navgroup navgroup-root">
+        <!-- home -->
+        <div class="hidden-p hidden-tp">
+        {% if page.url == '/en/' %}
+          <span class="navlink navlink-root">Home page</span>
+        {% else %}
+          <a class="navlink navlink-root cursor-back" href="/en/">Home page</a>
+        {% endif %}
+        </div>
+
+        <a class="navlink" href="{{ page.translate }}" lang="ro">
+          <span class="sr">Schimbă limba:</span>
+          Română
+        </a>
+      </div>
+
+      <div class="navgroup navgroup-menu">
+
+        <nav class="hidden-p hidden-tp">
+          <ul class="navlist">
+            <li>
+              <a class="navlink navlink-contact scrollTo" href="#contact" data-ga="/contact">Contact</a>
+            </li>
+            <li>
+              <a class="navlink" href="/en/partnership/">For companies</a>
+            </li>
+            <li>
+              <a class="navlink scrollTo" href="#about" data-ga="/about">About Stagii pe Bune</a>
+            </li>
+            <li>
+              <a class="navlink" href="https://docs.google.com/document/d/108iZmEj1Psf-gk7pU3Kn1U3uHCvUYqgayqHbZiMPJwc/edit?usp=sharing" target="_blank" data-ga="/press">Press kit <sup>RO</sup></a>
+            </li>
+          </ul>
+          <!-- contact -->
+        </nav>
+
+        <!-- mobile navmenu trigger -->
+        <button class="navmenu-trigger" type="button" 
+                onclick="toggleNavmenu()">
+          <div class="default">
+            <img src="/assets/icon-menu.svg">
+            <span class="sr">Open menu</span>
+          </div>
+          <div class="close" hidden>
+            <img src="/assets/icon-close.svg">
+            <span class="sr">Close menu</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- mobile navmenu -->
+      <div class="navmenu" id="navmenu-p">
+        <div class="inner">
+
+          <p class="navmenu-about">We hope to bring our internship programme to every single university city in Romania, so every student has the chance to reach his max. In 13 years of SPB we've seen interns become colleagues, and colleagues become leaders.</p>
+          
+          <nav>
+            <button type="button" class="navmenu-btn" onclick="window.location='/en/partnership/'" style="background: transparent;">
+              Pentru companii.</br>
+              <a href="/en/partnership/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
+            </button>
+
+            <a class="navmenu-btn" href="assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf" data-ga="/download">
+              Download presentation <br>
+              <span class="sr">PDF</span> 1.4 MB
+            </a>
+            
+            <button type="button" class="navmenu-btn" onclick="window.open('tel:+40752190062')" data-ga="/call">
+              <span class="sr">Call</span>
+              Vlad Posea, Program Manager
+              <a class="bold" href="tel:+40752190062" onclick="return false" tabindex="-1">+40 (752) 190 062</a>
+            </button>
+
+            <a class="navmenu-btn" href="mailto:vlad.posea@stagiipebune.ro" data-ga="/email"><span class="sr">Email</span> vlad.posea@stagiipebune.ro</a>
 
 
+            <div class="secondary-links">
+              <a href="" target="_blank" data-ga="/press">Press kit</a>
+              <a href="https://www.facebook.com/stagiipebune/" target="_blank" data-ga="/facebook">Facebook</a>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-      <a href="#contact">Contact</a>
-
-      <a href="/">Press kit</a>
-      <a href="/parteneriat/">For companii</a>
-      <a href="#about">About</a>
-    </nav>
+      
+    </div>
   </div>
 </header>
 
-
-<div class="navmenu">
-  <div class="inner">
-
-    <p>We hope to bring our internship programme to every single university city in Romania, so every student has the chance to reach his max. In 13 years of SPB we've seen interns become colleagues, and colleagues become leaders.</p>
-    
-    <nav>
-      <button type="button" class="navmenu-btn" onclick="window.location='/en/partnership/'" style="background: transparent;">
-        For companies.</br>
-        <a href="/en/partnership/" onclick="return false" tabindex="-1">What is taking part in SPB about?</a>
-      </button>
-
-      <a class="navmenu-btn" href="assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf">
-        Download presentation <br>
-        1,4 MB
-      </a>
-      
-      <button type="button" class="navmenu-btn" onclick="window.open('tel:+40752190062')">
-        Vlad Posea, Program Manager
-        <a class="bold" href="tel:+40752190062" onclick="return false" tabindex="-1">+40 (752) 190 062</a>
-      </button>
-
-      <a class="navmenu-btn" href="mailto:vlad.posea@stagiipebune.ro">vlad.posea@stagiipebune.ro</a>
-
-
-      <div class="secondary-links">
-        <a href="">Press kit</a>
-        <a href="https://www.facebook.com/stagiipebune/" target="_blank">Facebook</a>
-      </div>
-    </nav>
-  </div>
-</div>
-
-
-
-
-<script>
-  (function() {
-
-    target = document.body;
-    isOpen = false;
-
-    window.toggleNavmenu = function() {
-      isOpen = !isOpen;
-      target.classList.toggle('navmenu-open');
-
-      
-      console.log(isOpen);
-    };
-
-  }())
-</script>
