@@ -4,7 +4,7 @@
 
       <!-- title -->
       <div class="header-title">
-        <h1 class="title"><a href="/en/">Stagii pe Bune</a></h1>
+        <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}/en/">Stagii pe Bune</a></h1>
         <!-- or home to en -->
         <p class="subtitle">14th edition. February 2019</p>
       </div>
@@ -16,11 +16,11 @@
         {% if page.url == '/en/' %}
           <span class="navlink navlink-root">Home page</span>
         {% else %}
-          <a class="navlink navlink-root cursor-back" href="/en/">Home page</a>
+          <a class="navlink navlink-root cursor-back" href="{{ site.url }}{{ site.baseurl }}/en/">Home page</a>
         {% endif %}
         </div>
 
-        <a class="navlink" href="{{ page.translate }}" lang="ro">
+        <a class="navlink" href="{{ site.url }}{{ site.baseurl }}{{ page.translate }}" lang="ro">
           <span class="sr">Schimbă limba:</span>
           Română
         </a>
@@ -34,7 +34,7 @@
               <a class="navlink navlink-contact scrollTo" href="#contact" data-ga="/contact">Contact</a>
             </li>
             <li>
-              <a class="navlink" href="/en/partnership/">For companies</a>
+              <a class="navlink" href="{{ site.url }}{{ site.baseurl }}/en/partnership/">For companies</a>
             </li>
             <li>
               <a class="navlink scrollTo" href="#about" data-ga="/about">About Stagii pe Bune</a>
@@ -50,11 +50,11 @@
         <button class="navmenu-trigger" type="button" 
                 onclick="toggleNavmenu()">
           <div class="default">
-            <img src="/assets/icon-menu.svg">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/icon-menu.svg">
             <span class="sr">Open menu</span>
           </div>
           <div class="close" hidden>
-            <img src="/assets/icon-close.svg">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/icon-close.svg">
             <span class="sr">Close menu</span>
           </div>
         </button>
@@ -67,12 +67,12 @@
           <p class="navmenu-about">We hope to bring our internship programme to every single university city in Romania, so every student has the chance to reach his max. In 13 years of SPB we've seen interns become colleagues, and colleagues become leaders.</p>
           
           <nav>
-            <button type="button" class="navmenu-btn" onclick="window.location='/en/partnership/'" style="background: transparent;">
+            <button type="button" class="navmenu-btn" onclick="window.location='{{ site.url }}{{ site.baseurl }}/en/partnership/'" style="background: transparent;">
               Pentru companii.</br>
-              <a href="/en/partnership/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
+              <a href="{{ site.url }}{{ site.baseurl }}/en/partnership/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
             </button>
 
-            <a class="navmenu-btn" href="assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf" data-ga="/download">
+            <a class="navmenu-btn" href="{{ site.url }}{{ site.baseurl }}/assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf" data-ga="/download">
               Download presentation <br>
               <span class="sr">PDF</span> 1.4 MB
             </a>
@@ -87,7 +87,7 @@
 
 
             <div class="secondary-links">
-              <a href="" target="_blank" data-ga="/press">Press kit</a>
+              <a href="https://docs.google.com/document/d/108iZmEj1Psf-gk7pU3Kn1U3uHCvUYqgayqHbZiMPJwc/edit?usp=sharing" target="_blank" data-ga="/press">Press kit</a>
               <a href="https://www.facebook.com/stagiipebune/" target="_blank" data-ga="/facebook">Facebook</a>
             </div>
           </nav>

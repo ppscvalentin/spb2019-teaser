@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Basier square';
-  src: url('/assets/font/basiersquare-regular-webfont.eot');
-  src: url('/assets/font/basiersquare-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/font/basiersquare-regular-webfont.woff2') format('woff2'),
-       url('/assets/font/basiersquare-regular-webfont.woff') format('woff'),
-       url('/assets/font/basiersquare-regular-webfont.ttf') format('truetype');
+  src: url('../assets/font/basiersquare-regular-webfont.eot');
+  src: url('../assets/font/basiersquare-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/font/basiersquare-regular-webfont.woff2') format('woff2'),
+       url('../assets/font/basiersquare-regular-webfont.woff') format('woff'),
+       url('../assets/font/basiersquare-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Basier square';
-  src: url('/assets/font/basiersquare-medium-webfont.eot');
-  src: url('/assets/font/basiersquare-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/font/basiersquare-medium-webfont.woff2') format('woff2'),
-       url('/assets/font/basiersquare-medium-webfont.woff') format('woff'),
-       url('/assets/font/basiersquare-medium-webfont.ttf') format('truetype');
+  src: url('../assets/font/basiersquare-medium-webfont.eot');
+  src: url('../assets/font/basiersquare-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/font/basiersquare-medium-webfont.woff2') format('woff2'),
+       url('../assets/font/basiersquare-medium-webfont.woff') format('woff'),
+       url('../assets/font/basiersquare-medium-webfont.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -70,12 +70,12 @@
 
 
 body {
-  background: url('/assets/bgM-header.png') center -5rem no-repeat;
+  background: url('../assets/bgM-header.png') center -5rem no-repeat;
   font-size: 2rem;
 }
 @media (min-width: 600px) {
   body {
-    background: url('/assets/bgD-header.png') center -8rem no-repeat;
+    background: url('../assets/bgD-header.png') center -8rem no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -384,7 +384,7 @@ a[onclick="return false"] {
   min-height: 4.5em;
   position: relative;
   opacity: .6;
-  background: url('/assets/icon-quote.svg') top right no-repeat;
+  background: url('../assets/icon-quote.svg') top right no-repeat;
   background-size: 7.5rem 6rem;
   font-size: small;
 }
@@ -510,7 +510,7 @@ a[onclick="return false"] {
   position: relative;
   top: 1em;
   height: 25.5rem;
-  background: url('/assets/grid-companyLogos-tileable.png') center center;
+  background: url('../assets/grid-companyLogos-tileable.png') center center;
   background-size: auto 100%;
   background-position: 0 0;
 }
@@ -522,7 +522,7 @@ a[onclick="return false"] {
 }
 @media (min-width: 900px) {
   .companies {
-    background: url('/assets/grid-companyLogos.png') center no-repeat;
+    background: url('../assets/grid-companyLogos.png') center no-repeat;
     background-size: auto 100%;
   }
 }
@@ -544,7 +544,7 @@ a[onclick="return false"] {
 .section-forCompanies .a-icon::after {
   content: '';
   display: inline-block;
-  background: url('/assets/icon-next.svg') center no-repeat;
+  background: url('../assets/icon-next.svg') center no-repeat;
   width: 4.5rem;
   height: 3rem;
   margin-left: .5em;
@@ -648,7 +648,7 @@ a[onclick="return false"] {
 
 /* newIn2019*/
 .section-newIn2019 .flex {
-  background: url('/assets/bg-dottedMatrix.png') right bottom no-repeat;
+  background: url('../assets/bg-dottedMatrix.png') right bottom no-repeat;
 }
 @media (max-width: 899px) {
   .section-newIn2019 .flex {
@@ -741,7 +741,7 @@ a[onclick="return false"] {
 .section-download {
   /*min-height: 6em;*/
   border: 1px solid var(--color-accent);
-  background: url('/assets/spb2019_gif600x315-brochure.gif') center right no-repeat;
+  background: url('../assets/spb2019_gif600x315-brochure.gif') center right no-repeat;
   background-size: contain;
   font-size: 2rem;
 }
@@ -1485,17 +1485,17 @@ span.navlink {
 
 /* cursors */
 .cursor-back {
-  cursor: url("/assets/cursors/cursor-back.png") 0 40, auto; 
+  cursor: url("../assets/cursors/cursor-back.png") 0 40, auto; 
 }
 .cursor-download {
-  cursor: url("/assets/cursors/cursor-download.png") 40 40, auto; 
+  cursor: url("../assets/cursors/cursor-download.png") 40 40, auto; 
 }
 .cursor-newWindow, a[target="_blank"] {
-  cursor: url("/assets/cursors/cursor-newWindow.png") 40 40, auto; 
+  cursor: url("../assets/cursors/cursor-newWindow.png") 40 40, auto; 
 }
 .cursor-call {
-  cursor: url("/assets/cursors/cursor-call.png") 40 40, auto; 
+  cursor: url("../assets/cursors/cursor-call.png") 40 40, auto; 
 }
 .cursor-email {
-  cursor: url("/assets/cursors/cursor-email.png") 40 40, auto; 
+  cursor: url("../assets/cursors/cursor-email.png") 40 40, auto; 
 }
