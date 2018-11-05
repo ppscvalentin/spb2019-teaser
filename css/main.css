@@ -1226,12 +1226,17 @@ a[onclick="return false"] {
 }
 .header-title {
   position: relative;
-  z-index: 1010;
   height: 14rem;
   text-align: center;
   transition: transform .5s;
   padding-top: 6rem;
 }
+@media (max-width: 599px) and min-height(500px) {
+  .header-title {
+    z-index: 1010;
+  }
+}
+.header-title
 .header .title {
   margin: 0;
   margin-top: 4rem;
