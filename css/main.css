@@ -1491,7 +1491,7 @@ span.navlink {
   cursor: url("../assets/cursors/cursor-back.png") 0 40, auto; 
 }
 .cursor-download {
-  cursor: url("../assets/cursors/cursor-download.png") 40 40, auto; 
+  cursor: url("../assets/cursors/cursor-download.png") 40 40, auto!important; 
 }
 .cursor-newWindow, a[target="_blank"] {
   cursor: url("../assets/cursors/cursor-newWindow.png") 40 40, auto; 
