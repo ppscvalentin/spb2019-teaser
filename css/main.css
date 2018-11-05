@@ -1231,7 +1231,7 @@ a[onclick="return false"] {
   transition: transform .5s;
   padding-top: 6rem;
 }
-@media (max-width: 599px) and min-height(500px) {
+@media (max-width: 599px) and (min-height: 500px) {
   .header-title {
     z-index: 1010;
   }
