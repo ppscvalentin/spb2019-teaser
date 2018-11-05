@@ -1239,7 +1239,7 @@ a[onclick="return false"] {
 .header .title {
   margin: 0;
   margin-top: 4rem;
-  font-size: 3rem;
+  font-weight: 500;
   color: #000;
 }
 .header .title a {
@@ -1263,7 +1263,6 @@ a[onclick="return false"] {
   .header .title {
     margin-top: 0;
     font-size: 6rem;
-    font-weight: 500;
   }
   .header .subtitle {
     margin-top: 2rem;
