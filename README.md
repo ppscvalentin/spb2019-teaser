@@ -7,16 +7,16 @@ Built with Jekyll.
 ## Development
 
 ```
-bundle exec jekyll serve --config _config.local.yml
+bundle exec jekyll serve
 ```
 
 
 ## Build
 
-1. `cp _config.local.yml _config.yml`
+1. `cp _config.yml _config.production.yml`
  
-2. Edit `_config.yml`:
+2. Edit `_config.production.yml`:
     1. Set `GA-TRACKING_ID`
     2. Set `baseurl` and `url`
 
-3. Run build: `bundle exec jekyll build JEKYLL_ENV=production`
+3. Run build: `bundle exec jekyll build --config _config.production.yml`
