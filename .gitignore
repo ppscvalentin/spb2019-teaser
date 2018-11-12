@@ -12,7 +12,6 @@ _build/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-_config.yml
 
 ### Sass ###
 *.css.map
