@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Stagii pe Bune 2019. Din Februarie.
 email: contact@stagiipebune.ro
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site, g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog if blog should act as your root folder
+url: "" # the base hostname & protocol for your site (no trailing slash), e.g. https://stagiipebune.ro
 
 # Build settings
 markdown: kramdown
