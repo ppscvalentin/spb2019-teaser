@@ -286,6 +286,9 @@ h2, .h2 {
 .muted {
   color: rgba(255, 255, 255, .6);
 }
+strong {
+  font-weight: 500;
+}
 
 .align-center {
   text-align: center;

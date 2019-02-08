@@ -4,7 +4,7 @@
 
       <!-- title -->
       <div class="header-title">
-        <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}/en/">Stagii pe Bune</a></h1>
+        <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}/en/for-companies/">Stagii pe Bune</a></h1>
         <!-- or home to en -->
         <p class="subtitle">14th edition. February 2019</p>
       </div>
@@ -13,10 +13,10 @@
       <div class="navgroup navgroup-root">
         <!-- home -->
         <div class="hidden-p hidden-tp">
-        {% if page.url == '/en/' %}
+        {% if page.url == '/en/for-companies' or page.url == '/en/for-companies/' %}
           <span class="navlink navlink-root">Home page</span>
         {% else %}
-          <a class="navlink navlink-root cursor-back" href="{{ site.url }}{{ site.baseurl }}/en/">Home page</a>
+          <a class="navlink navlink-root cursor-back" href="{{ site.url }}{{ site.baseurl }}/en/for-companies/">Home page</a>
         {% endif %}
         </div>
 
@@ -34,7 +34,7 @@
               <a class="navlink navlink-contact scrollTo" href="#contact" data-ga="/contact">Contact</a>
             </li>
             <li>
-              <a class="navlink" href="{{ site.url }}{{ site.baseurl }}/en/partnership/">For companies</a>
+              <a class="navlink" href="{{ site.url }}{{ site.baseurl }}/en/for-companies/partnership/">Partnership opportunities</a>
             </li>
             <li>
               <a class="navlink scrollTo" href="#about" data-ga="/about">About Stagii pe Bune</a>
@@ -67,9 +67,9 @@
           <p class="navmenu-about">We hope to bring our internship programme to every single university city in Romania, so every student has the chance to reach his max. In 13 years of SPB we've seen interns become colleagues, and colleagues become leaders.</p>
           
           <nav>
-            <button type="button" class="navmenu-btn" onclick="window.location='{{ site.url }}{{ site.baseurl }}/en/partnership/'" style="background: transparent;">
-              Pentru companii.</br>
-              <a href="{{ site.url }}{{ site.baseurl }}/en/partnership/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
+            <button type="button" class="navmenu-btn" onclick="window.location='{{ site.url }}{{ site.baseurl }}/en/for-companies/partnership/'" style="background: transparent;">
+              Partnership opportunities</br>
+              <a href="{{ site.url }}{{ site.baseurl }}/en/for-companies/partnership/" onclick="return false" tabindex="-1">What it means to be a SPB partner?</a>
             </button>
 
             <a class="navmenu-btn" href="{{ site.url }}{{ site.baseurl }}/assets/spb2019_brochureA5-en-v1.4-webOptimized.pdf" data-ga="/download">

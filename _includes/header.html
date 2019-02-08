@@ -4,7 +4,7 @@
 
       <!-- title -->
       <div class="header-title">
-        <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}">Stagii pe Bune</a></h1>
+        <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}/pentru-companii/">Stagii pe Bune</a></h1>
         <!-- or home to en -->
         <p class="subtitle">Ediția 14 · Din Februarie</p>
       </div>
@@ -14,10 +14,10 @@
       <div class="navgroup navgroup-root">
         <!-- home -->
         <div class="hidden-p hidden-tp">
-        {% if page.url == '/' %}
+        {% if page.url == '/pentru-companii' or page.url == '/pentru-companii/' %}
           <span class="navlink navlink-root">Prima pagină</span>
         {% else %}
-          <a class="navlink navlink-root cursor-back" href="{{ site.url }}{{ site.baseurl }}/">Prima pagină</a>
+          <a class="navlink navlink-root cursor-back" href="{{ site.url }}{{ site.baseurl }}/pentru-companii/">Prima pagină</a>
         {% endif %}
         </div>
 
@@ -37,7 +37,7 @@
               <a class="navlink navlink-contact scrollTo" href="#contact" data-ga="/contact">Contact</a>
             </li>
             <li>
-              <a class="navlink" href="{{ site.url }}{{ site.baseurl }}/parteneriat/">Pentru companii</a>
+              <a class="navlink" href="{{ site.url }}{{ site.baseurl }}/pentru-companii/parteneriat/">Oportunități de parteneriat</a>
             </li>
             <li>
               <a class="navlink scrollTo" href="#despre" data-ga="/about">Despre Stagii pe Bune</a>
@@ -72,9 +72,9 @@
           <p class="navmenu-about">Ne dorim ca toți studenții din România să aibă oportunitatea de a face stagiul pe vară. În 13 ani de SPB am văzut cum stagiarii se transformă în colegi, iar din colegi în conducători.</p>
           
           <nav>
-            <button type="button" class="navmenu-btn" onclick="window.location='{{ site.url }}{{ site.baseurl }}/parteneriat/'" style="background: transparent;">
+            <button type="button" class="navmenu-btn" onclick="window.location='{{ site.url }}{{ site.baseurl }}/pentru-companii/parteneriat/'" style="background: transparent;">
               Pentru companii.</br>
-              <a href="{{ site.url }}{{ site.baseurl }}/parteneriat/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
+              <a href="{{ site.url }}{{ site.baseurl }}/pentru-companii/parteneriat/" onclick="return false" tabindex="-1">Ce înseamnă să participi la SPB?</a>
             </button>
 
             <a class="navmenu-btn" href="{{ site.url }}{{ site.baseurl }}/assets/spb2019_brochureA5-en-v1.5-webOptimized.pdf" data-ga="/download">
